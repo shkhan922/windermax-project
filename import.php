@@ -18,7 +18,7 @@ if(isset($_POST["Import"])){
 	         while (($emapData = fgetcsv($file, 10000, ",")) !== FALSE)
 	         {
 	             
-	              send($emapData[0],$head,$image);
+				send($emapData[0],$head,$image);
 	    
 	          //It wiil insert a row to our subject table from our csv file`
    $result = mysqli_query($conn,"INSERT into subject (`mobile`,`date`) values('$emapData[0]', '$date')");

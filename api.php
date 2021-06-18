@@ -5,7 +5,7 @@ $code='91';
 $mobile; 
 $data = [
     'phone' => $code.$mobile, // Receivers phone
-     'body' => 'http://windermax.com/software/img/'.$image, 
+     'body' => 'https://lampstack1.herokuapp.com/img/'.$image, 
    
 'filename' => $image,
 'caption' => $head
@@ -27,5 +27,5 @@ $options = stream_context_create(['http' => [
 $result = file_get_contents($url, false, $options);
 }
 
-send('9354292144','hello','a.png');
+// send('9354292144','hello','a.png');
 ?>
